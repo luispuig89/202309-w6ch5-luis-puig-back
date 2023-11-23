@@ -9,6 +9,7 @@
     "start:dev": "cross-env PORT=2700 DEBUG=W7E* nodemon dist/index.js",
     "build": "tsc -w",
     "test": "jest --watchAll --coverage",
+    "test:prod": "jest --watchAll --coverage --watchAll=false --passWithNoTests",
     "api": "json-server --watch ./api/db.json"
   },
   "keywords": [],
