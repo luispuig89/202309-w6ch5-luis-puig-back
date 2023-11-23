@@ -1,9 +1,9 @@
 import { FilmsMongoRepo } from './films.mongo.repo';
 import { FilmModel } from './films.mongo.model.js';
 
-jest.mock('./notes.mongo.model.js');
+jest.mock('./films.mongo.model.js');
 
-describe('Given NotesMongoRepo', () => {
+describe('Given FilmsMongoRepo', () => {
   let repo: FilmsMongoRepo;
   describe('When we isntantiate it without errors', () => {
     const exec = jest.fn().mockResolvedValue('Test');
